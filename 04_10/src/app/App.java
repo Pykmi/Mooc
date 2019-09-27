@@ -1,0 +1,18 @@
+package app;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Asunto eiraYksio = new Asunto(1, 16, 5500);
+        Asunto kallioKaksio = new Asunto(2, 38, 4200);
+        Asunto jakomakiKolmio = new Asunto(3, 78, 2500);
+
+        System.out.println(eiraYksio.suurempi(kallioKaksio));       // false
+        System.out.println(jakomakiKolmio.suurempi(kallioKaksio));  // true 
+
+        System.out.println(eiraYksio.hintaero(kallioKaksio));        // 71600
+        System.out.println(jakomakiKolmio.hintaero(kallioKaksio));   // 35400
+
+        System.out.println(eiraYksio.kalliimpi(kallioKaksio));       // false
+        System.out.println(jakomakiKolmio.kalliimpi(kallioKaksio));   // true
+    }
+}
